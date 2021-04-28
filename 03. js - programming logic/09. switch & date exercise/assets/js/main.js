@@ -1,4 +1,4 @@
-/*
+
 // criar relógio no formato: "diaSemana(texto), 00 de Mês(texto) de ano(0000) - 00:00"
 // inserir o relógio ao header da página
 
@@ -100,7 +100,7 @@ function formatDataMonth (month) {
             return monthText;
     }
 }
-*/
+
 
 // JEITO 2 DE FAZER
 
@@ -127,13 +127,16 @@ h1.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full', timeStyle: '
 //falta implementar dentro do HTML
 const data = new Date();
 
-const diaArray = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinte-feira', 'sexta-feira', 'sábado'];
-const mesArray = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const diaArray = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira',
+        'sexta-feira', 'sábado'];
+const mesArray = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'setembro',
+        'outubro', 'novembro', 'dezembro'];
 
 const weekdayText = diaArray[data.getDay()];
 const monthText = mesArray[data.getMonth()];
 
-console.log(`${weekdayText}, ${zeroAEsquerda(data.getDate())} de ${monthText} de ${data.getFullYear()} - ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`);
+console.log(`${weekdayText}, ${zeroAEsquerda(data.getDate())} de ${monthText} de ${data.getFullYear()}
+${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}`);
 
 function zeroAEsquerda(data) {
     return data >= 10 ? data : `0${data}`;
