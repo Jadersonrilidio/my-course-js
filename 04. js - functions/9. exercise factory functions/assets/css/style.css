@@ -26,3 +26,33 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+
+.calculadora {
+    width: 400px;
+}
+
+.display {
+    font-size: 2em;
+    width: 400px;
+    text-align: right;
+}
+
+.btn {
+    font-size: 1em;
+    height: 40px;
+    width: 102%;
+    border: none;
+    background: #dfdfdf;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #9b9a9a;
+}
+
+.btn-eq {
+    background: royalblue;
+}
+
+.btn-del {
+    background: indianred;
+}

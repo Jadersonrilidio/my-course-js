@@ -16,6 +16,7 @@ console.log(alunos);
 console.log(alunos.lentgh);
 alunos[alunos.length] = 'Novo alunos';
 alunos[alunos.length] = 'Outro novo alunos';
+
 alunos.push('Nome do aluno'); // adiciona um elemento ao final do array
 
 alunos.unshift('Luiza'); // adiciona um elemento ao início do array
