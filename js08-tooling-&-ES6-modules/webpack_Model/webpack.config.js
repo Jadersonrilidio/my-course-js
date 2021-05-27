@@ -1,8 +1,8 @@
-const path = require('path'); //commonJS
+const path = require('path'); // commonJS
 
 module.exports = {
     mode: 'development',
-    entry: './src.index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'public', 'assets', 'js'),
         filename: 'bundle.js'
@@ -19,5 +19,5 @@ module.exports = {
             }
         }]
     },
-    devtool: 'source-map'
+    devtools: 'source-map'
 }

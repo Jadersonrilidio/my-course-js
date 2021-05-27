@@ -1,2 +1,6 @@
-alert("Olá mundo!");
-//# sourceMappingURL=bundle.js.map
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	
+/******/ 	
+/******/ })()
+;
