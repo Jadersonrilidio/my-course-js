@@ -56,9 +56,7 @@ class GeraSenha {
 
 // TESTS ==========================================================================
 
-const senha1 = new GeraSenha(32, true, true, true, false);
+const senha1 = new GeraSenha(20, true, true, true, false);
 
-console.log(senha1);
-console.log(senha1.setMax());
-console.log(senha1.optionsArray);
+
 console.log(senha1.geraSenha());
